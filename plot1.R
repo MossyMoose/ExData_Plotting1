@@ -40,7 +40,6 @@ if(!exists("hhData")) {
   hhData$Sub_metering_2<-as.numeric(hhData$Sub_metering_2)
 
   # Clean up to free memory
-  rm(fileName)
   rm(hhDataFull)
 }
 

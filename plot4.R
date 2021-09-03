@@ -40,7 +40,6 @@ if(!exists("hhData")) {
   hhData$Sub_metering_2<-as.numeric(hhData$Sub_metering_2)
   
   # Clean up to free memory
-  rm(fileName)
   rm(hhDataFull)
 }
 
@@ -72,7 +71,7 @@ with(hhData, lines(x=DT, y=Sub_metering_2, col="red"))
 with(hhData, lines(x=DT, y=Sub_metering_3, col="blue"))
 with(hhData, legend(x="topright", legend=c("Sub_metering_1", "Sub_metering_2",
                                            "Sub_metering_3"), lty = c(1, 1, 1),
-                    col = c("black", "red", "blue"), bty="n", cex = 0.75))
+                    col = c("black", "red", "blue"), bty="n"))
 
 # Plot 4
 with(hhData, plot(x=DT, y=Global_reactive_power, type="l", xlab="datetime",
